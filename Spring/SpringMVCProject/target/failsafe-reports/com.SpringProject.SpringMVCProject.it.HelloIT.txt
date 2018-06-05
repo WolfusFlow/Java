@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.SpringProject.SpringMVCProject.it.HelloIT
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.747 s - in com.SpringProject.SpringMVCProject.it.HelloIT

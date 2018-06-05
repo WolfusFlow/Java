@@ -1,0 +1,29 @@
+
+Delete node_moduls
+project -> properties -> resource -> resource filter
+
+proxy.json -> send data from client side to server
+in package.json need to change start - need to add --proxy-config proxy.conf.json
+
+npm run ng build --env=prod (with this command we build ang4 client) result is a dist folder 
+
+
+plugin for maven to copy all stuff from dist to /src/main/resources/static
+<plugin>
+<artifactId>maven-resources-plugin</artifactId>
+<executions>
+      <execution>
+          <id>copy-resources</id>
+          <phase>validate</phase>
+          <goals><goal>copy-resources</goal></goals>
+          <configuration>
+              <outputDirectory>${basedir}/target/classes/static/</outputDirectory >
+              <resources>
+                  <resource>
+                      <directory>${basedir}/../angular4-client/dist</directory >
+                  </resource>
+              </resources>
+          </configuration>
+      </execution>
+</executions>
+</plugin>
